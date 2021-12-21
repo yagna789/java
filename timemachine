@@ -1,0 +1,55 @@
+import java.util.Scanner;
+class time
+{
+int hours,min,sec;
+time()
+{
+hours=00;
+min=00;
+sec=00;
+}
+time(int h)
+{
+hours=h;
+min=00;
+sec=00;
+}
+time(int h,int m)
+{
+hours=h;
+min=m;
+sec=00;
+}
+time(int h,int m,int s)
+{
+hours=h;
+min=m;
+sec=s;
+}
+void display()
+{
+System.out.println("time is"+hours+"."+min+"."+sec+".");
+}
+}
+class timemachine
+{
+public static void main(String args[])
+{
+Scanner d=new Scanner(System.in);
+int h,m,s;
+System.out.println("enter no of hours");
+h=d.nextInt();
+System.out.println("enter no of min");
+m=d.nextInt();
+System.out.println("enter no of sec");
+s=d.nextInt();
+time t=new time();
+time t1=new time(h);
+time t2=new time(h,m);
+time t3=new time(h,m,s);
+t.display();
+t1.display();
+t2.display();
+t3.display();
+}
+}
