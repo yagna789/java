@@ -1,0 +1,40 @@
+class room
+{
+    double length,breadth;
+   void g()
+    {
+        length=2;
+        breadth=4;
+    }
+    void g(double l)
+    {
+        breadth=length=l;
+    }
+    void g(double l,double b)
+    {
+        length=l;
+        breadth=b;
+    }
+    double area()
+    {
+        return length*breadth;
+    }
+}
+class areamethod
+{
+    public static void main(String args[])
+    {
+        room r1=new room();
+        r1.g();
+        System.out.println("default method");
+        System.out.println("the area is" +r1.area());
+        room r2=new room();
+        r2.g(3);
+        System.out.println("method with one parameter");
+        System.out.println("the area is" +r2.area());
+        room r3=new room();
+        r3.g(4,5);
+        System.out.println("method with 2 parameters");
+        System.out.println("the area is" +r3.area());
+    }
+}
