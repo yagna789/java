@@ -1,0 +1,62 @@
+import java.util.*;
+class student
+{
+String name,rollno;
+void info()
+{
+Scanner d=new Scanner(System.in);
+System.out.println("enter the student name");
+String n=d.nextLine();
+System.out.println("enter the student roll no");
+String r=d.nextLine();
+name=n;
+rollno=r;
+}
+}
+class test extends student
+{
+float e,m,s,sa,t,c;
+void read()
+{
+Scanner d=new Scanner(System.in);
+System.out.println("enter your english marks");
+float e=d.nextFloat();
+System.out.println("enter your math marks");
+float m=d.nextFloat();
+System.out.println("enter your science marks");
+float s=d.nextFloat();
+System.out.println("enter your sanskrit marks");
+float sa=d.nextFloat();
+System.out.println("enter your telugu marks");
+float t=d.nextFloat();
+System.out.println("enter your c marks");
+float c=d.nextFloat();
+}
+}
+class result extends test
+{
+float result;
+void get()
+{
+read();
+result=e+m+s+sa+t+c;
+System.out.println("the result is"+result);
+}
+}
+class sub
+{
+public static void main(String args[])
+{
+int j;
+Scanner d=new Scanner(System.in);
+System.out.println("enter no of students");
+int m=d.nextInt();
+result[] re=new result[m];
+for(j=0;j<m;j++)
+{
+re[j]=new result();
+re[j].info();
+re[j].read();
+re[j].get();
+}
+}
