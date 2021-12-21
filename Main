@@ -1,0 +1,54 @@
+import java.util.*;
+class employee
+{
+    String name,id;
+    float salary;
+    void read_emp()
+    {
+        Scanner d=new Scanner(System.in);
+        System.out.println("enter your name");
+        name=d.next();
+        System.out.println("enter your id");
+        id=d.next();
+        system.out.println("enter your salary");
+        salary=d.nextFloat();
+        
+    }
+}
+class temprory_employee extends employee
+{
+    read_emp();
+    System.out.println("salary of tempory employee is"+0.3.5*salary);
+}
+class permanent_employee extends employee
+{
+    print_emp()
+    {
+    read_emp();
+    System.out.println("salary of permanent employee is" +0.05*salary);
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        int y;
+        Scanner d=new Scanner(System.in);
+        System.out.println("enter employee \n1.temprory \n2.permament");
+        if(c==1);
+        {
+            temprory_employee e=new temprory_employee();
+            e.print_emp();
+        }
+        else
+        {
+            permanent_employee f=new permanent_employee();
+            f.print_emp();
+            
+        }
+    }
+}
+
+
+    
+    
