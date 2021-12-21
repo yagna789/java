@@ -20,17 +20,17 @@ void read()
 {
 Scanner d=new Scanner(System.in);
 System.out.println("enter your english marks");
-float e=d.nextFloat();
+ e=d.nextFloat();
 System.out.println("enter your math marks");
-float m=d.nextFloat();
+ m=d.nextFloat();
 System.out.println("enter your science marks");
-float s=d.nextFloat();
+ s=d.nextFloat();
 System.out.println("enter your sanskrit marks");
-float sa=d.nextFloat();
+ sa=d.nextFloat();
 System.out.println("enter your telugu marks");
-float t=d.nextFloat();
+ t=d.nextFloat();
 System.out.println("enter your c marks");
-float c=d.nextFloat();
+ c=d.nextFloat();
 }
 }
 class result extends test
@@ -58,5 +58,6 @@ re[j]=new result();
 re[j].info();
 re[j].read();
 re[j].get();
+}
 }
 }
